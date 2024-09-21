@@ -1,0 +1,131 @@
+﻿/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+h1 {
+    margin: 0; /* Убираем отступы у заголовка */
+}
+
+/* Остальные стили остаются без изменений... */
+
+/* Яркий и цветной стиль */
+.bright {
+    background-color: #e1f5fe; /* Светло-голубой фон */
+}
+
+.bright h1 {
+    color: #d32f2f; /* Ярко-красный цвет */
+}
+
+.bright input[type="text"] {
+    border: 2px solid #1976d2; /* Ярко-синяя рамка */
+}
+
+.bright button {
+    background-color: #4caf50; /* Ярко-зеленый фон */
+}
+
+.bright th {
+    background-color: #fbc02d; /* Ярко-желтый фон для заголовков */
+}
+
+.bright .delete-button {
+    background-color: #e64a19; /* Ярко-оранжевый фон для кнопки "Удалить" */
+}
+
+/* Минималистичный стиль */
+.minimalist {
+    background-color: #ffffff; /* Белый фон */
+    color: #000000; /* Черный текст */
+}
+
+.minimalist input[type="text"],
+.minimalist button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* Стиль "Заметки" */
+.notepad {
+    background-image: url('paper-texture.jpg'); /* Замените на путь к текстуре бумаги */
+    background-size: cover;
+    color: #3e2723; /* Темно-коричневый текст */
+    font-family: 'Courier New', Courier, monospace; /* Рукописный шрифт */
+}
+
+.notepad th {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Стиль "Пост-ит" */
+.postit {
+    background-color: #ffeb3b; /* Яркий желтый фон */
+}
+
+.postit th {
+    background-color: #ff9800; /* Ярко-оранжевый фон для заголовков */
+}
+
+/* Стиль "Доска задач" */
+.taskboard {
+    background-color: #f5f5f5; /* Светло-серый фон */
+}
+
+.taskboard tr {
+    background-color: #ffffff; /* Белый фон для карточек */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Общие стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Светло-серый фон для четных строк */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Светло-серый фон при наведении */
+}
+
+.delete-button {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-button:hover {
+    transform: scale(1.1); /* Увеличение кнопки "Удалить" при наведении */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #9e9e9e; /* Серый цвет для выполненных задач */
+}

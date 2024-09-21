@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Список задач</title>
+</head>
+<body class="bright"> <!-- Установим начальный стиль -->
+<div class="header">
+    <div class="style-selector">
+        <label for="styleSelect">Выберите стиль:</label>
+        <select id="styleSelect">
+            <option value="bright">Яркий и цветной</option>
+            <option value="minimalist">Минималистичный</option>
+            <option value="notepad">Стиль "Заметки"</option>
+            <option value="postit">Стиль "Пост-ит"</option>
+            <option value="taskboard">Стиль "Доска задач"</option>
+        </select>
+    </div>
+    <h1>Управление списком задач</h1>
+    <div class="form-container">
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Введите задачу" required>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Задачи</th>
+        <th>В работе</th>
+        <th>Выполненные</th>
+    </tr>
+    </thead>
+    <tbody id="taskList">
+    <!-- Задачи будут добавляться сюда -->
+    </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
