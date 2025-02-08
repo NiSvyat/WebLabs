@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Список задач</title>
+</head>
+<body class="bright"> <!-- Установим начальный стиль -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="projects.html">Проекты</a></li>
+      <li><a href="tasks.html" class="active">Список задач</a></li>
+      <li><a href="about.html">О приложении</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="header">
+    <div class="style-selector">
+      <label for="styleSelect">Выберите стиль:</label>
+      <select id="styleSelect">
+        <option value="bright">Яркий и цветной</option>
+        <option value="minimalist">Минималистичный</option>
+        <option value="notepad">Стиль "Заметки"</option>
+        <option value="postit">Стиль "Пост-ит"</option>
+        <option value="taskboard">Стиль "Доска задач"</option>
+      </select>
+    </div>
+    <h1>Управление списком задач</h1>
+    <div class="form-container">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Введите задачу" required>
+        <button type="submit">Добавить</button>
+        <button type="button" id="sortAsc">Сортировать по возрастанию</button>
+        <button type="button" id="sortDesc">Сортировать по убыванию</button>
+      </form>
+    </div>
+
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th>Задачи</th>
+      <th>В работе</th>
+      <th>Выполненные</th>
+    </tr>
+    </thead>
+    <tbody id="taskList">
+    <!-- Задачи будут добавляться сюда -->
+    </tbody>
+  </table>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
